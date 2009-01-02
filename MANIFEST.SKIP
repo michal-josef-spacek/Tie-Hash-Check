@@ -1,0 +1,6 @@
+\bCVS\b
+^Makefile$
+\.bak$
+\.old$
+TODO
+MANIFEST.SKIP
