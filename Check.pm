@@ -187,6 +187,12 @@ TODO
 
 =back
 
+=head1 ERRORS
+
+ Key '%s' doesn't exist.
+ Parameter isn't hash.
+ Stack isn't array.
+
 =head1 EXAMPLE
 
  # Pragmas.
@@ -202,7 +208,7 @@ TODO
          'two' => 2,  
  };
 
- # Turn error.
+ # Turn error "Key 'three' doesn't exist.".
  print $hash{'three'};
 
 =head1 DEPENDENCIES
