@@ -5,3 +5,12 @@ t/Hash::Check/00_use.t
 t/Hash::Check/01_version.t
 t/Hash::Check/02_pod_coverage.t
 t/Hash::Check/03_pod.t
+t/Hash::Check/04_tiehash.t
+t/Hash::Check/05_clear.t
+t/Hash::Check/06_delete.t
+t/Hash::Check/07_exists.t
+t/Hash::Check/08_fetch.t
+t/Hash::Check/09_firstkey.t
+t/Hash::Check/10_nextkey.t
+t/Hash::Check/11_scalar.t
+t/Hash::Check/12_store.t
