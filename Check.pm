@@ -21,9 +21,15 @@ sub TIEHASH {
 # Constructor.
 
 	my ($class, $p, $stack) = @_;
-	err 'Parameter isn\'t hash.' if ref $p ne 'HASH';
-	$stack = [] if ! $stack;
-	err 'Stack isn\'t array.' if ref $stack ne 'ARRAY';
+	if (ref $p ne 'HASH') {
+		err 'Parameter isn\'t hash.';
+	}
+	if (! $stack) {
+		$stack = [];
+	}
+	if (ref $stack ne 'ARRAY') {
+		err 'Stack isn\'t array.';
+	}
 	my $self = bless {}, $class;
 	foreach my $key (keys %{$p}) {
 		if (ref $p->{$key} eq 'HASH') {
