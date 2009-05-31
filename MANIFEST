@@ -1,3 +1,7 @@
+Check.pm
 Makefile.PL
 MANIFEST			This list of files
-Check.pm
+t/Hash::Check/00_use.t
+t/Hash::Check/01_version.t
+t/Hash::Check/02_pod_coverage.t
+t/Hash::Check/03_pod.t
