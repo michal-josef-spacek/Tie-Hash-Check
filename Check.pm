@@ -130,3 +130,95 @@ sub STORE {
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Hash::Check - TODO
+
+=head1 SYNOPSIS
+
+TODO
+
+=head1 SUBROUTINES
+
+=over 8
+
+=item B<TIEHASH>
+
+TODO
+
+=item B<CLEAR>
+
+TODO
+
+=item B<DELETE>
+
+TODO
+
+=item B<EXISTS>
+
+TODO
+
+=item B<FETCH>
+
+TODO
+
+=item B<FIRSTKEY>
+
+TODO
+
+=item B<NEXTKEY>
+
+TODO
+
+=item B<SCALAR>
+
+TODO
+
+=item B<STORE>
+
+TODO
+
+=back
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Hash::Check;
+
+ # Tied hash.
+ tie my %hash, 'Hash::Check', {
+         'one' => 1,
+         'two' => 2,  
+ };
+
+ # Turn error.
+ print $hash{'three'};
+
+=head1 DEPENDENCIES
+
+L<Error::Simple::Multiple(3pm)>.
+
+=head1 AUTHOR
+
+Michal Špaček L<tupinek@gmail.com>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
