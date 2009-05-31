@@ -31,14 +31,10 @@ sub TIEHASH {
 		err 'Stack isn\'t array.';
 	}
 	my $self = bless {}, $class;
+	$self->{'data'} = {};
 	foreach my $key (keys %{$hash_hr}) {
-		if (ref $hash_hr->{$key} eq 'HASH') {
-			tie my %tmp, 'Hash::Check', $hash_hr->{$key},
-				[@{$stack_ar}, $key];
-			$self->{'data'}->{$key} = \%tmp;
-		} else {
-			$self->{'data'}->{$key} = $hash_hr->{$key};
-		}
+		_add_hash_value($self->{'data'}, $key, $hash_hr->{$key}, 
+			$stack_ar);
 	}
 	$self->{'stack'} = $stack_ar;
 	return $self;
@@ -125,7 +121,27 @@ sub STORE {
 # Hash store.
 
 	my ($self, $key, $value) = @_;
-	$self->{'data'}->{$key} = $value;
+	_add_hash_value($self->{'data'}, $key, $value, $self->{'stack'});
+	return;
+}
+
+#------------------------------------------------------------------------------
+# Private subroutines.
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+sub _add_hash_value {
+#------------------------------------------------------------------------------
+# Add hash value to storage.
+
+	my ($hash_hr, $key, $value, $stack_ar) = @_;
+	if (ref $value eq 'HASH') {
+		tie my %tmp, 'Hash::Check', $value,
+			[@{$stack_ar}, $key];
+		$hash_hr->{$key} = \%tmp;
+	} else {
+		$hash_hr->{$key} = $value;
+	}
 	return;
 }
 
