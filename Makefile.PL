@@ -9,4 +9,7 @@ WriteMakefile(
 		'Error::Simple::Multiple' => 0.05,
 	},
 	'VERSION' => '0.01',
+	'test' => {
+		'TESTS' => 't/Hash::Check/*.t',
+	},
 );
