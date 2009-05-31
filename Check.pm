@@ -20,27 +20,27 @@ sub TIEHASH {
 #------------------------------------------------------------------------------
 # Constructor.
 
-	my ($class, $hash_hr, $stack) = @_;
+	my ($class, $hash_hr, $stack_ar) = @_;
 	if (ref $hash_hr ne 'HASH') {
 		err 'Parameter isn\'t hash.';
 	}
-	if (! $stack) {
-		$stack = [];
+	if (! $stack_ar) {
+		$stack_ar = [];
 	}
-	if (ref $stack ne 'ARRAY') {
+	if (ref $stack_ar ne 'ARRAY') {
 		err 'Stack isn\'t array.';
 	}
 	my $self = bless {}, $class;
 	foreach my $key (keys %{$hash_hr}) {
 		if (ref $hash_hr->{$key} eq 'HASH') {
 			tie my %tmp, 'Hash::Check', $hash_hr->{$key},
-				[@{$stack}, $key];
+				[@{$stack_ar}, $key];
 			$self->{'data'}->{$key} = \%tmp;
 		} else {
 			$self->{'data'}->{$key} = $hash_hr->{$key};
 		}
 	}
-	$self->{'stack'} = $stack;
+	$self->{'stack'} = $stack_ar;
 	return $self;
 }
 
