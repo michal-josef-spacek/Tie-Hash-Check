@@ -7,6 +7,7 @@ WriteMakefile(
 	'NAME' => 'Hash::Check',
 	'PREREQ_PM' => {
 		'Error::Simple::Multiple' => 0.05,
+		'File::Object' => 0,
 	},
 	'VERSION' => '0.01',
 	'test' => {
