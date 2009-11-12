@@ -75,13 +75,11 @@ sub FETCH {
 # Hash fetch.
 
 	my ($self, $key) = @_;
-	if (exists $self->{'data'}->{$key}) {
-		return $self->{'data'}->{$key};
-	} else {
+	if (! exists $self->{'data'}->{$key}) {
 		my @stack = (@{$self->{'stack'}}, $key);
 		err 'Key \''.join('->', @stack).'\' doesn\'t exist.';
-		return;
 	}
+	return $self->{'data'}->{$key};
 }
 
 #------------------------------------------------------------------------------
