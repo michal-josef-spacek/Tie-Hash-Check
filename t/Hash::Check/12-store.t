@@ -2,6 +2,7 @@
 use Hash::Check;
 use Test::More 'tests' => 11;
 
+# Test.
 tie my %hash, 'Hash::Check', {};
 is_deeply(
 	\%hash,
@@ -17,6 +18,7 @@ is_deeply(
 	},
 );
 
+# Test.
 $hash{'one'} = 1;
 is_deeply(
 	\%hash,
@@ -36,6 +38,7 @@ is_deeply(
 	},
 );
 
+# Test.
 $hash{'two'} = {
 	'three' => 3,
 };

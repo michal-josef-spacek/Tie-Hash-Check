@@ -2,6 +2,7 @@
 use Hash::Check;
 use Test::More 'tests' => 16;
 
+# Test.
 tie my %hash1, 'Hash::Check', {};
 is(ref \%hash1, 'HASH');
 is_deeply(
@@ -18,6 +19,7 @@ is_deeply(
 	}
 );
 
+# Test.
 tie my %hash2, 'Hash::Check', {
 	'one' => 1,
 	'two' => 2,
@@ -43,6 +45,7 @@ is_deeply(
 	},
 );
 
+# Test.
 tie my %hash3, 'Hash::Check', {
 	'one' => {
 		'two' => {

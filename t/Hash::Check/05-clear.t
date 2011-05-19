@@ -2,6 +2,7 @@
 use Hash::Check;
 use Test::More 'tests' => 2;
 
+# Test.
 tie my %hash, 'Hash::Check', {
 	'one' => 1,
 	'two' => 2,
