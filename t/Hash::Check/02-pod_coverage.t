@@ -1,3 +1,7 @@
+# Pragmas.
+use strict;
+use warnings;
+
 # Modules.
 use Test::Pod::Coverage 'tests' => 1;
 
