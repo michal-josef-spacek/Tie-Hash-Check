@@ -3,7 +3,6 @@ use English qw(-no_match_vars);
 use Hash::Check;
 use Test::More 'tests' => 5;
 
-print "Testing: fetch().\n";
 tie my %hash, 'Hash::Check', {
 	'one' => 1,
 	'three' => {

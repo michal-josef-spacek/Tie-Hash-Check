@@ -2,7 +2,6 @@
 use Hash::Check;
 use Test::More 'tests' => 16;
 
-print "Testing: tiehash().\n";
 tie my %hash1, 'Hash::Check', {};
 is(ref \%hash1, 'HASH');
 is_deeply(

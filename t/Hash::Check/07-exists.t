@@ -2,7 +2,6 @@
 use Hash::Check;
 use Test::More 'tests' => 3;
 
-print "Testing: exists().\n";
 tie my %hash, 'Hash::Check', {
 	'one' => 1,
 	'two' => 2,

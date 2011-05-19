@@ -2,7 +2,6 @@
 use Hash::Check;
 use Test::More 'tests' => 11;
 
-print "Testing: store().\n";
 tie my %hash, 'Hash::Check', {};
 is_deeply(
 	\%hash,
