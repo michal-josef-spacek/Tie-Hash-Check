@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 
 # Definition.
 WriteMakefile(
-	'AUTHOR' => 'Michal Špaček',
+	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
 	'NAME' => 'Hash::Check',
 	'PREREQ_PM' => {
 		'Error::Pure' => 0.01,
