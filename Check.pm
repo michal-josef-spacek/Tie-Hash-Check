@@ -5,13 +5,13 @@ use strict;
 use warnings;
 
 # Modules.
-use Error::Simple::Multiple qw(err);
+use Error::Pure qw(err);
 
 # Version.
 our $VERSION = 0.01;
 
 # Error level.
-$Error::Simple::Multiple::LEVEL = 5;
+$Error::Pure::Utils::LEVEL = 5;
 
 # Constructor.
 sub TIEHASH {
@@ -191,7 +191,7 @@ TODO
 
 =head1 DEPENDENCIES
 
-L<Error::Simple::Multiple(3pm)>.
+L<Error::Pure(3pm)>.
 
 =head1 AUTHOR
 
