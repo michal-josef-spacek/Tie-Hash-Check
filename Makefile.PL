@@ -20,7 +20,6 @@ WriteMakefile(
 	'NAME' => 'Hash::Check',
 	'PREREQ_PM' => {
 		'Error::Pure' => 0.01,
-		'File::Object' => 0,
 	},
 	'VERSION' => '0.01',
 	'test' => {
