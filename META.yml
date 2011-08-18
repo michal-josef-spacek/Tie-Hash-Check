@@ -1,0 +1,33 @@
+---
+abstract: TODO
+author:
+  - 'Michal Špaček <skim@cpan.org>'
+build_requires:
+  English: 0
+  ExtUtils::MakeMaker: 6.42
+  File::Object: 0.01
+  Test::More: 0
+  Test::Pod: 0
+  Test::Pod::Coverage: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.01'
+license: bsd
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Hash-Check
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  Error::Pure: 0.01
+resources:
+  license: http://opensource.org/licenses/bsd-license.php
+  repository:
+    type: git
+    url: git://github.com/tupinek/Hash-Check
+    web: https://github.com/tupinek/Hash-Check
+version: 0.01

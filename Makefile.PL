@@ -3,27 +3,26 @@ use strict;
 use warnings;
 
 # Modules.
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
 # Definition.
-WriteMakefile(
-	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
-	'BUILD_REQUIRES' => {
-		'File::Object' => 0,
-		'Test::More' => 0,
-		'Test::Pod' => 0,
-		'Test::Pod::Coverage' => 0,
-	},
-	'CONFIGURE_REQUIRES' => {
-		'ExtUtils::MakeMaker' => 0,
-	},
-	'LICENSE' => 'bsd',
-	'NAME' => 'Hash::Check',
-	'PREREQ_PM' => {
-		'Error::Pure' => 0.01,
-	},
-	'VERSION' => '0.01',
-	'test' => {
-		'TESTS' => 't/Hash::Check/*.t',
-	},
-);
+abstract 'TODO';
+author 'Michal Špaček <skim@cpan.org>';
+license 'bsd';
+name 'Hash-Check';
+requires 'Error::Pure' => 0.01;
+resources 'repository' => {
+	'url' => 'git://github.com/tupinek/Hash-Check',
+	'web' => 'https://github.com/tupinek/Hash-Check',
+	'type' => 'git',
+};
+test_requires 'English' => 0;
+test_requires 'File::Object' => 0.01;
+test_requires 'Test::More' => 0;
+test_requires 'Test::Pod' => 0;
+test_requires 'Test::Pod::Coverage' => 0;
+tests_recursive;
+version '0.01';
+
+# Run.
+WriteAll();
