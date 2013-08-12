@@ -1,8 +1,17 @@
 Changes
 Check.pm
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
+META.yml
 t/Hash-Check/00-use.t
 t/Hash-Check/01-version.t
 t/Hash-Check/02-pod_coverage.t
