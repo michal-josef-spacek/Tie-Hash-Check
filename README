@@ -1,0 +1,60 @@
+NAME
+    Hash::Check - TODO
+
+SYNOPSIS
+    TODO
+
+SUBROUTINES
+    TIEHASH TODO
+
+    CLEAR   TODO
+
+    DELETE  TODO
+
+    EXISTS  TODO
+
+    FETCH   TODO
+
+    FIRSTKEY
+            TODO
+
+    NEXTKEY TODO
+
+    SCALAR  TODO
+
+    STORE   TODO
+
+ERRORS
+     Key '%s' doesn't exist.
+     Parameter isn't hash.
+     Stack isn't array.
+
+EXAMPLE
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use Hash::Check;
+
+     # Tied hash.
+     tie my %hash, 'Hash::Check', {
+             'one' => 1,
+             'two' => 2,  
+     };
+
+     # Turn error "Key 'three' doesn't exist.".
+     print $hash{'three'};
+
+DEPENDENCIES
+    Error::Pure(3pm).
+
+AUTHOR
+    Michal Špaček skim@cpan.org
+
+LICENSE AND COPYRIGHT
+    BSD license.
+
+VERSION
+    0.01
+

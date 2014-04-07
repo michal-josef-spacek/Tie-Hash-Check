@@ -10,6 +10,7 @@ abstract 'TODO';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Hash-Check';
+readme_from 'Check.pm';
 requires 'Error::Pure' => 0.01;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Hash-Check';
