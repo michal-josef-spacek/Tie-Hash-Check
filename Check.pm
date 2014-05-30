@@ -191,7 +191,7 @@ TODO
 
 =head1 DEPENDENCIES
 
-L<Error::Pure(3pm)>.
+L<Error::Pure>.
 
 =head1 AUTHOR
 
