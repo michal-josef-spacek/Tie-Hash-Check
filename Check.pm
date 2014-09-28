@@ -127,39 +127,39 @@ TODO
 
 =over 8
 
-=item B<TIEHASH>
+=item C<TIEHASH>
 
 TODO
 
-=item B<CLEAR>
+=item C<CLEAR>
 
 TODO
 
-=item B<DELETE>
+=item C<DELETE>
 
 TODO
 
-=item B<EXISTS>
+=item C<EXISTS>
 
 TODO
 
-=item B<FETCH>
+=item C<FETCH>
 
 TODO
 
-=item B<FIRSTKEY>
+=item C<FIRSTKEY>
 
 TODO
 
-=item B<NEXTKEY>
+=item C<NEXTKEY>
 
 TODO
 
-=item B<SCALAR>
+=item C<SCALAR>
 
 TODO
 
-=item B<STORE>
+=item C<STORE>
 
 TODO
 

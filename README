@@ -5,24 +5,29 @@ SYNOPSIS
     TODO
 
 SUBROUTINES
-    TIEHASH TODO
-
-    CLEAR   TODO
-
-    DELETE  TODO
-
-    EXISTS  TODO
-
-    FETCH   TODO
-
-    FIRSTKEY
+    "TIEHASH"
             TODO
 
-    NEXTKEY TODO
+    "CLEAR" TODO
 
-    SCALAR  TODO
+    "DELETE"
+            TODO
 
-    STORE   TODO
+    "EXISTS"
+            TODO
+
+    "FETCH" TODO
+
+    "FIRSTKEY"
+            TODO
+
+    "NEXTKEY"
+            TODO
+
+    "SCALAR"
+            TODO
+
+    "STORE" TODO
 
 ERRORS
      Key '%s' doesn't exist.
