@@ -47,7 +47,7 @@ EXAMPLE
      print $hash{'three'};
 
 DEPENDENCIES
-    Error::Pure(3pm).
+    Error::Pure.
 
 AUTHOR
     Michal Špaček skim@cpan.org
