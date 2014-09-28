@@ -2,7 +2,10 @@ NAME
     Hash::Check - TODO
 
 SYNOPSIS
-    TODO
+     use Hash::Check;
+     tie my %hash, 'Hash::Check', {
+             %parameters,
+     };
 
 SUBROUTINES
     "TIEHASH"

@@ -121,7 +121,10 @@ Hash::Check - TODO
 
 =head1 SYNOPSIS
 
-TODO
+ use Hash::Check;
+ tie my %hash, 'Hash::Check', {
+         %parameters,
+ };
 
 =head1 SUBROUTINES
 
