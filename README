@@ -33,9 +33,12 @@ SUBROUTINES
     "STORE" TODO
 
 ERRORS
-     Key '%s' doesn't exist.
-     Parameter isn't hash.
-     Stack isn't array.
+     TIEHASH():
+             Parameter isn't hash.
+             Stack isn't array.
+
+     FETCH():
+             Key '%s' doesn't exist.
 
 EXAMPLE
      # Pragmas.

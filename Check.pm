@@ -170,9 +170,12 @@ TODO
 
 =head1 ERRORS
 
- Key '%s' doesn't exist.
- Parameter isn't hash.
- Stack isn't array.
+ TIEHASH():
+         Parameter isn't hash.
+         Stack isn't array.
+
+ FETCH():
+         Key '%s' doesn't exist.
 
 =head1 EXAMPLE
 
