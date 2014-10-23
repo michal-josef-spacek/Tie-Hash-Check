@@ -202,6 +202,10 @@ TODO
 
 L<Error::Pure>.
 
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Hash-Check>.
+
 =head1 AUTHOR
 
 Michal Špaček L<skim@cpan.org>

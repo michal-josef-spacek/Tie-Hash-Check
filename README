@@ -63,6 +63,9 @@ EXAMPLE
 DEPENDENCIES
     Error::Pure.
 
+REPOSITORY
+    <https://github.com/tupinek/Hash-Check>.
+
 AUTHOR
     Michal Špaček skim@cpan.org
 
