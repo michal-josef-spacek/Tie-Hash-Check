@@ -13,7 +13,7 @@ our $VERSION = 0.01;
 # Error level.
 $Error::Pure::Utils::LEVEL = 5;
 
-# Constructor.
+# Hash create.
 sub TIEHASH {
 	my ($class, $hash_hr, $stack_ar) = @_;
 	if (ref $hash_hr ne 'HASH') {
@@ -117,7 +117,7 @@ __END__
 
 =head1 NAME
 
-Tie::Hash::Check - TODO
+Tie::Hash::Check - Tied construct for hash key checking.
 
 =head1 SYNOPSIS
 
@@ -132,39 +132,39 @@ Tie::Hash::Check - TODO
 
 =item C<TIEHASH>
 
-TODO
+ Hash create.
 
 =item C<CLEAR>
 
-TODO
+ Hash clear.
 
 =item C<DELETE>
 
-TODO
+ Hash delete.
 
 =item C<EXISTS>
 
-TODO
+ Hash exists.
 
 =item C<FETCH>
 
-TODO
+ Hash fetch.
 
 =item C<FIRSTKEY>
 
-TODO
+ Hash first key.
 
 =item C<NEXTKEY>
 
-TODO
+ Hash nextkey.
 
 =item C<SCALAR>
 
-TODO
+ Hash scalar.
 
 =item C<STORE>
 
-TODO
+ Hash store.
 
 =back
 

@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'TODO';
+abstract 'Tied construct for hash key checking.';
 author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Tie-Hash-Check';

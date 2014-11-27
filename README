@@ -1,5 +1,5 @@
 NAME
-    Tie::Hash::Check - TODO
+    Tie::Hash::Check - Tied construct for hash key checking.
 
 SYNOPSIS
      use Tie::Hash::Check;
@@ -9,28 +9,31 @@ SYNOPSIS
 
 SUBROUTINES
     "TIEHASH"
-            TODO
+             Hash create.
 
-    "CLEAR" TODO
+    "CLEAR"
+             Hash clear.
 
     "DELETE"
-            TODO
+             Hash delete.
 
     "EXISTS"
-            TODO
+             Hash exists.
 
-    "FETCH" TODO
+    "FETCH"
+             Hash fetch.
 
     "FIRSTKEY"
-            TODO
+             Hash first key.
 
     "NEXTKEY"
-            TODO
+             Hash nextkey.
 
     "SCALAR"
-            TODO
+             Hash scalar.
 
-    "STORE" TODO
+    "STORE"
+             Hash store.
 
 ERRORS
      TIEHASH():

@@ -1,5 +1,5 @@
 ---
-abstract: TODO
+abstract: 'Tied construct for hash key checking.'
 author:
   - 'Michal Spacek <skim@cpan.org>'
 build_requires:
