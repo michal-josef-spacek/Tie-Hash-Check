@@ -70,10 +70,13 @@ REPOSITORY
     <https://github.com/tupinek/Hash-Check>.
 
 AUTHOR
-    Michal Špaček skim@cpan.org
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
 
 LICENSE AND COPYRIGHT
-    BSD license.
+     © Michal Špaček 2009-2014
+     BSD 2-Clause License
 
 VERSION
     0.01

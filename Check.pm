@@ -211,11 +211,14 @@ L<https://github.com/tupinek/Hash-Check>.
 
 =head1 AUTHOR
 
-Michal Špaček L<skim@cpan.org>
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
 
 =head1 LICENSE AND COPYRIGHT
 
-BSD license.
+ © Michal Špaček 2009-2014
+ BSD 2-Clause License
 
 =head1 VERSION
 
