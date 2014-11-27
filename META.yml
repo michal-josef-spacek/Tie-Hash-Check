@@ -26,7 +26,7 @@ no_index:
     - inc
     - t
 requires:
-  Error::Pure: 0.01
+  Error::Pure: 0.18
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Tie-Hash-Check
   homepage: https://github.com/tupinek/Tie-Hash-Check

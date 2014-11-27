@@ -11,7 +11,7 @@ author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Tie-Hash-Check';
 readme_from 'Check.pm';
-requires 'Error::Pure' => 0.01;
+requires 'Error::Pure' => 0.18;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Tie-Hash-Check';
 resources 'homepage' => 'https://github.com/tupinek/Tie-Hash-Check';
