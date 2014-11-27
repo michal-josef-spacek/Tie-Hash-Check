@@ -5,13 +5,13 @@ use strict;
 use warnings;
 
 # Modules.
-use Hash::Check;
+use Tie::Hash::Check;
 
 # Set error type.
 $ENV{'ERROR_PURE_TYPE'} = 'Print';
 
 # Tied hash.
-tie my %hash, 'Hash::Check', {
+tie my %hash, 'Tie::Hash::Check', {
         'one' => 1,
         'two' => 2,  
 };
@@ -20,4 +20,4 @@ tie my %hash, 'Hash::Check', {
 print $hash{'three'};
 
 # Output:
-# Hash::Check: Key 'three' doesn't exist.
+# Tie::Hash::Check: Key 'three' doesn't exist.

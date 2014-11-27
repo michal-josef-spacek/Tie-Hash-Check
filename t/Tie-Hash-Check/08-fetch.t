@@ -4,11 +4,11 @@ use warnings;
 
 # Modules.
 use English qw(-no_match_vars);
-use Hash::Check;
+use Tie::Hash::Check;
 use Test::More 'tests' => 5;
 
 # Test.
-tie my %hash, 'Hash::Check', {
+tie my %hash, 'Tie::Hash::Check', {
 	'one' => 1,
 	'three' => {
 		'four' => 4,

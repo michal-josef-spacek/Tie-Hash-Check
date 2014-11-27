@@ -3,13 +3,13 @@ use strict;
 use warnings;
 
 # Modules.
-use Hash::Check;
+use Tie::Hash::Check;
 use Test::More 'tests' => 1;
 
 # Test.
-tie my %hash, 'Hash::Check', {
+tie my %hash, 'Tie::Hash::Check', {
 	'one' => 1,
 	'two' => 2,
 };
-my ($key) = sort keys %hash;
-is($key, 'one');
+my $scalar = scalar %hash;
+is($scalar, '2/8');

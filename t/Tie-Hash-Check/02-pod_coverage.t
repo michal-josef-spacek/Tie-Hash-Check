@@ -7,4 +7,4 @@ use Test::NoWarnings;
 use Test::Pod::Coverage 'tests' => 2;
 
 # Test.
-pod_coverage_ok('Hash::Check', 'Hash::Check is covered.');
+pod_coverage_ok('Tie::Hash::Check', 'Tie::Hash::Check is covered.');

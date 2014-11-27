@@ -9,8 +9,8 @@ use Test::NoWarnings;
 BEGIN {
 
 	# Test.
-	use_ok('Hash::Check');
+	use_ok('Tie::Hash::Check');
 }
 
 # Test.
-require_ok('Hash::Check');
+require_ok('Tie::Hash::Check');

@@ -3,9 +3,9 @@ use strict;
 use warnings;
 
 # Modules.
-use Hash::Check;
+use Tie::Hash::Check;
 use Test::More 'tests' => 2;
 use Test::NoWarnings;
 
 # Test.
-is($Hash::Check::VERSION, 0.01, 'Version.');
+is($Tie::Hash::Check::VERSION, 0.01, 'Version.');

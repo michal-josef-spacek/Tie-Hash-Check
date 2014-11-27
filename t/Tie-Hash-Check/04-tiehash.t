@@ -3,18 +3,18 @@ use strict;
 use warnings;
 
 # Modules.
-use Hash::Check;
+use Tie::Hash::Check;
 use Test::More 'tests' => 16;
 
 # Test.
-tie my %hash1, 'Hash::Check', {};
+tie my %hash1, 'Tie::Hash::Check', {};
 is(ref \%hash1, 'HASH');
 is_deeply(
 	\%hash1,
 	{},
 );
 my $obj = tied %hash1;
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -24,7 +24,7 @@ is_deeply(
 );
 
 # Test.
-tie my %hash2, 'Hash::Check', {
+tie my %hash2, 'Tie::Hash::Check', {
 	'one' => 1,
 	'two' => 2,
 };
@@ -37,7 +37,7 @@ is_deeply(
 	},
 );
 $obj = tied %hash2;
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -50,7 +50,7 @@ is_deeply(
 );
 
 # Test.
-tie my %hash3, 'Hash::Check', {
+tie my %hash3, 'Tie::Hash::Check', {
 	'one' => {
 		'two' => {
 			'three' => 3,
@@ -69,7 +69,7 @@ is_deeply(
 	},
 );
 $obj = tied %hash3;
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -84,7 +84,7 @@ is_deeply(
 	},
 );
 $obj = tied %{$hash3{'one'}};
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -97,7 +97,7 @@ is_deeply(
 	},
 );
 $obj = tied %{$hash3{'one'}{'two'}};
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{

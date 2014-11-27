@@ -3,17 +3,17 @@ use strict;
 use warnings;
 
 # Modules.
-use Hash::Check;
+use Tie::Hash::Check;
 use Test::More 'tests' => 11;
 
 # Test.
-tie my %hash, 'Hash::Check', {};
+tie my %hash, 'Tie::Hash::Check', {};
 is_deeply(
 	\%hash,
 	{},
 );
 my $obj = tied %hash;
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -31,7 +31,7 @@ is_deeply(
 	},
 );
 $obj = tied %hash;
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -56,7 +56,7 @@ is_deeply(
 	},
 );
 $obj = tied %hash;
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -70,7 +70,7 @@ is_deeply(
 	},
 );
 $obj = tied %{$hash{'two'}};
-is(ref $obj, 'Hash::Check');
+is(ref $obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{

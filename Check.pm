@@ -1,4 +1,4 @@
-package Hash::Check;
+package Tie::Hash::Check;
 
 # Pragmas.
 use strict;
@@ -98,7 +98,7 @@ sub STORE {
 sub _add_hash_value {
 	my ($hash_hr, $key, $value, $stack_ar) = @_;
 	if (ref $value eq 'HASH') {
-		tie my %tmp, 'Hash::Check', $value,
+		tie my %tmp, 'Tie::Hash::Check', $value,
 			[@{$stack_ar}, $key];
 		$hash_hr->{$key} = \%tmp;
 	} else {
@@ -117,12 +117,12 @@ __END__
 
 =head1 NAME
 
-Hash::Check - TODO
+Tie::Hash::Check - TODO
 
 =head1 SYNOPSIS
 
- use Hash::Check;
- tie my %hash, 'Hash::Check', {
+ use Tie::Hash::Check;
+ tie my %hash, 'Tie::Hash::Check', {
          %parameters,
  };
 
@@ -184,13 +184,13 @@ TODO
  use warnings;
 
  # Modules.
- use Hash::Check;
+ use Tie::Hash::Check;
 
  # Set error type.
  $ENV{'ERROR_PURE_TYPE'} = 'Print';
 
  # Tied hash.
- tie my %hash, 'Hash::Check', {
+ tie my %hash, 'Tie::Hash::Check', {
          'one' => 1,
          'two' => 2,  
  };
@@ -199,7 +199,7 @@ TODO
  print $hash{'three'};
 
  # Output:
- # Hash::Check: Key 'three' doesn't exist.
+ # Tie::Hash::Check: Key 'three' doesn't exist.
 
 =head1 DEPENDENCIES
 

@@ -19,7 +19,7 @@ license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Hash-Check
+name: Tie-Hash-Check
 no_index:
   directory:
     - examples
@@ -28,8 +28,8 @@ no_index:
 requires:
   Error::Pure: 0.01
 resources:
-  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Hash-Check
-  homepage: https://github.com/tupinek/Hash-Check
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Tie-Hash-Check
+  homepage: https://github.com/tupinek/Tie-Hash-Check
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/Hash-Check
+  repository: git://github.com/tupinek/Tie-Hash-Check
 version: '0.01'

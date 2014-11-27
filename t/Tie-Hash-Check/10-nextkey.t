@@ -3,11 +3,11 @@ use strict;
 use warnings;
 
 # Modules.
-use Hash::Check;
+use Tie::Hash::Check;
 use Test::More 'tests' => 3;
 
 # Test.
-tie my %hash, 'Hash::Check', {
+tie my %hash, 'Tie::Hash::Check', {
 	'one' => 1,
 	'two' => 2,
 };
