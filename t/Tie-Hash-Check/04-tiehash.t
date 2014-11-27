@@ -3,8 +3,10 @@ use strict;
 use warnings;
 
 # Modules.
+use English;
+use Error::Pure::Utils qw(clean);
 use Tie::Hash::Check;
-use Test::More 'tests' => 16;
+use Test::More 'tests' => 18;
 
 # Test.
 tie my %hash1, 'Tie::Hash::Check', {};
@@ -107,3 +109,17 @@ is_deeply(
 		'stack' => ['one', 'two'],
 	},
 );
+
+# Test.
+eval {
+	tie my %hash1, 'Tie::Hash::Check', 'foo';
+};
+is($EVAL_ERROR, "Parameter isn't hash.\n", "Parameter isn't hash.");
+clean();
+
+# Test.
+eval {
+	tie my %hash1, 'Tie::Hash::Check', {}, 'foo';
+};
+is($EVAL_ERROR, "Stack isn't array.\n", "Stack isn't array.");
+clean();
