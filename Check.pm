@@ -6,6 +6,7 @@ use warnings;
 
 # Modules.
 use Error::Pure qw(err);
+use Error::Pure::Utils;
 
 # Version.
 our $VERSION = 0.02;
