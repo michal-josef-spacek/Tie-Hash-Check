@@ -11,19 +11,21 @@ use Test::NoWarnings;
 
 # Test.
 tie my %hash1, 'Tie::Hash::Check', {};
-is(ref \%hash1, 'HASH');
+is(ref \%hash1, 'HASH', 'Reference to blank hash.');
 is_deeply(
 	\%hash1,
 	{},
+	'Content of blank hash.',
 );
 my $obj = tied %hash1;
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
 		'data' => {},
 		'stack' => [],
-	}
+	},
+	'Content of blank object.',
 );
 
 # Test.
@@ -31,16 +33,17 @@ tie my %hash2, 'Tie::Hash::Check', {
 	'one' => 1,
 	'two' => 2,
 };
-is(ref \%hash2, 'HASH');
+is(ref \%hash2, 'HASH', 'Reference to hash with two keys.');
 is_deeply(
 	\%hash2,
 	{
 		'one' => 1,
 		'two' => 2,
 	},
+	'Content of hash with two keys.',
 );
 $obj = tied %hash2;
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -50,6 +53,7 @@ is_deeply(
 		},
 		'stack' => [],
 	},
+	'Content of object with two hash keys.',
 );
 
 # Test.
@@ -60,7 +64,7 @@ tie my %hash3, 'Tie::Hash::Check', {
 		},
 	},
 };
-is(ref \%hash3, 'HASH');
+is(ref \%hash3, 'HASH', 'Reference to hash with nested hash references.');
 is_deeply(
 	\%hash3,
 	{
@@ -70,9 +74,10 @@ is_deeply(
 			},
 		},
 	},
+	'Content of hash with nested hash references.',
 );
 $obj = tied %hash3;
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -85,9 +90,10 @@ is_deeply(
 		},
 		'stack' => [],
 	},
+	'Content of object of hash with nested hash references.',
 );
 $obj = tied %{$hash3{'one'}};
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -98,9 +104,10 @@ is_deeply(
 		},
 		'stack' => ['one'],
 	},
+	'Content of nested object.',
 );
 $obj = tied %{$hash3{'one'}{'two'}};
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -109,6 +116,7 @@ is_deeply(
 		},
 		'stack' => ['one', 'two'],
 	},
+	'Content of nested object - second.',
 );
 
 # Test.
