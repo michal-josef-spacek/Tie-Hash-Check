@@ -6,7 +6,8 @@ use warnings;
 use English;
 use Error::Pure::Utils qw(clean);
 use Tie::Hash::Check;
-use Test::More 'tests' => 18;
+use Test::More 'tests' => 19;
+use Test::NoWarnings;
 
 # Test.
 tie my %hash1, 'Tie::Hash::Check', {};

@@ -5,7 +5,8 @@ use warnings;
 # Modules.
 use English qw(-no_match_vars);
 use Tie::Hash::Check;
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 5;
+use Test::NoWarnings;
 
 # Test.
 tie my %hash, 'Tie::Hash::Check', {
