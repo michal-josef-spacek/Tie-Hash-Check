@@ -15,9 +15,9 @@ tie my %hash, 'Tie::Hash::Check', {
 my $num = 0;
 while (my ($key, $val) = each %hash) {
 	if ($key eq 'one') {
-		is($val, '1');
+		is($val, '1', "Get value for 'one' key.");
 	} else {
-		is($key, 'two');
-		is($val, 2);
+		is($key, 'two', "Get 'two' key.");
+		is($val, 2, "Get value for 'two' key.");
 	}
 }

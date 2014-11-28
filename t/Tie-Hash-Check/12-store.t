@@ -12,15 +12,17 @@ tie my %hash, 'Tie::Hash::Check', {};
 is_deeply(
 	\%hash,
 	{},
+	'Blank hash.',
 );
 my $obj = tied %hash;
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
 		'data' => {},
 		'stack' => [],
 	},
+	'Blank hash object.',
 );
 
 # Test.
@@ -30,9 +32,10 @@ is_deeply(
 	{
 		'one' => 1,
 	},
+	'Hash with one element added.',
 );
 $obj = tied %hash;
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -41,6 +44,7 @@ is_deeply(
 		},
 		'stack' => [],
 	},
+	'Hash object with one element added.',
 );
 
 # Test.
@@ -55,9 +59,10 @@ is_deeply(
 			'three' => 3,
 		},
 	},
+	'Hash after second element added.',
 );
 $obj = tied %hash;
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -69,9 +74,10 @@ is_deeply(
 		},
 		'stack' => [],
 	},
+	'Hash object after second element added.',
 );
 $obj = tied %{$hash{'two'}};
-is(ref $obj, 'Tie::Hash::Check');
+isa_ok($obj, 'Tie::Hash::Check');
 is_deeply(
 	$obj,
 	{
@@ -80,4 +86,5 @@ is_deeply(
 		},
 		'stack' => ['two'],
 	},
+	'Nested object after second element added.',
 );

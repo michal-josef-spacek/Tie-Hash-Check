@@ -13,4 +13,4 @@ tie my %hash, 'Tie::Hash::Check', {
 	'two' => 2,
 };
 my ($key) = sort keys %hash;
-is($key, 'one');
+is($key, 'one', 'Get first key.');
