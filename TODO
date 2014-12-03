@@ -1,6 +1,9 @@
 TODO
 ====
-6.
+6. scalar() metoda na urcitych verzich Perlu nefunguje spravne.
+   http://www.cpantesters.org/distro/T/Tie-Hash-Check.html
+   http://matrix.cpantesters.org/?dist=Tie-Hash-Check+0.01
+7.
 
 Applied
 =======
