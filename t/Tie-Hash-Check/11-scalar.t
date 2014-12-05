@@ -13,4 +13,4 @@ tie my %hash, 'Tie::Hash::Check', {
 	'two' => 2,
 };
 my $scalar = scalar %hash;
-is($scalar, '2/8', 'Get scalar value of hash.');
+like($scalar, qr{\d/8}, 'Get scalar value of hash.');
