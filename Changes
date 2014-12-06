@@ -5,6 +5,7 @@
  - Add tests for Test::NoWarnings.
  - Fix test for scalar() method (#100706 Possible hash randomization
    problems in test suite). Thanks Slaven Rezić.
+ - Update LICENSE AND COPYRIGHT section in doc.
 
 0.01 2014-11-27T20:00:34+01:00
  - First version.
