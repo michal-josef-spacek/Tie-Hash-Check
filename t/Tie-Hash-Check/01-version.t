@@ -8,4 +8,4 @@ use Test::More 'tests' => 2;
 use Test::NoWarnings;
 
 # Test.
-is($Tie::Hash::Check::VERSION, 0.02, 'Version.');
+is($Tie::Hash::Check::VERSION, 0.03, 'Version.');
