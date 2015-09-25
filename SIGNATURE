@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.79.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,44 +14,46 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 c7a25eaa11dd9af3d36f1d6d5a3acbbd5ed8f8c7 Changes
-SHA1 1262efa6d33f115525f2683207f02f308381d90e Check.pm
-SHA1 d6dfac2c0a485769f4b9e92c8c8806b16888278c LICENSE
-SHA1 132b5b842835db94fd37507cf8dc2014321c8731 MANIFEST
-SHA1 dde438251b94a5628847881367772fb677dbead0 META.yml
-SHA1 892b81449775a270015c37f6e9dc889b72102506 Makefile.PL
-SHA1 f923bcbcd49a4165071e506e0a7ce7572cbdc1d5 README
+SHA1 b335f34fe4e4ae4e38f587433478b132e33e4978 Changes
+SHA1 51b5115f4177cb0a8cffac1a7dfa6d06187436f0 Check.pm
+SHA1 b7ceae89cdd78850407f39eeb346505c22908f4b LICENSE
+SHA1 4bd444faa6c59e95843259abc44d90fd6914c74d MANIFEST
+SHA1 a05affe66718cc8f0e812dc1aba07e82d3d250c8 META.yml
+SHA1 834f351dc66814758bebf2c13577b41296f9d4a7 Makefile.PL
+SHA1 462d8af3ff9b39a54a533e4c5c48a643128fee1e README
 SHA1 6ddb9066bfb01cf07b3cc8b81cb05dfdce88354f examples/ex1.pl
-SHA1 d2664c57b65686abbfbbe1e71229761625be4922 inc/Module/Install.pm
-SHA1 da41a8d9904f7b409b49a5f6c338d3eb305a2b4b inc/Module/Install/Base.pm
-SHA1 0db0afe19cd298abba248fa089e5525bd5ab3ab6 inc/Module/Install/Can.pm
-SHA1 e7152bfd5ca67d0e33f96d09c59d600bca5c1f15 inc/Module/Install/Fetch.pm
-SHA1 29ee1cb0dc262b00983e3a2f5cf00b538dff5069 inc/Module/Install/Makefile.pm
-SHA1 e963f80cfe255f16e55067d1feb6841cff3ed2fe inc/Module/Install/Metadata.pm
+SHA1 bce3c51bb369419603298064b78e14077b93af66 inc/Module/Install.pm
+SHA1 5c1a9d3a384a5262cbc105ab76d446047904c7fa inc/Module/Install/AuthorRequires.pm
+SHA1 d001b4b9a48395a8c4134b234a0e1789138427c5 inc/Module/Install/AuthorTests.pm
+SHA1 fe220f215f645500ce8f14ff5e19d9a28692af56 inc/Module/Install/Base.pm
+SHA1 b56ed8e42c600e08007d152cf0b1438a7c3b7f6e inc/Module/Install/Can.pm
+SHA1 99c531a17a67ce5250df2ae151cc48c80d914cde inc/Module/Install/Fetch.pm
+SHA1 76efdca3603159e0ae0e18f19fe72a0211a69529 inc/Module/Install/Makefile.pm
+SHA1 2e33e87882d60db3913da6284dd5295e5315e18a inc/Module/Install/Metadata.pm
 SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
-SHA1 65a1f09af1f4f9e47a98b6b45667c328b1b2f9c0 inc/Module/Install/Win32.pm
-SHA1 f191c49475b3f51775180cd4f7e41e3bdab7f85a inc/Module/Install/WriteAll.pm
-SHA1 fd2aa351e22dc455447cf757a3acde9ce8c99e76 t/Tie-Hash-Check/00-use.t
-SHA1 7e3f8eb74a3b3fa03afcb97574f965824bbb7c9f t/Tie-Hash-Check/01-version.t
-SHA1 ec2c3c5b052eb0e512ace8ce0900cb130747ed1b t/Tie-Hash-Check/02-pod_coverage.t
-SHA1 0c4204c6be0e49eef58eb8a8d8aaf59a1ad26618 t/Tie-Hash-Check/03-pod.t
-SHA1 5f76542393300fea3d50a81251c5d522e340e6d1 t/Tie-Hash-Check/04-tiehash.t
-SHA1 9948b5226af995705284ffb868f417aca60373ce t/Tie-Hash-Check/05-clear.t
-SHA1 c5e4c6d3fe4dab4319dce292711e09ec87550dce t/Tie-Hash-Check/06-delete.t
-SHA1 34f3507dba5e6113b39e9fbff7be6c5b0bd82cf0 t/Tie-Hash-Check/07-exists.t
-SHA1 b3cb49e2adc3a1cd35105a48d517a99614f829e9 t/Tie-Hash-Check/08-fetch.t
-SHA1 2e598c14cc8b7ef176b8cafc848e414d5a755915 t/Tie-Hash-Check/09-firstkey.t
-SHA1 386b50e2e96b4a47a62f5640be6abed8817f0567 t/Tie-Hash-Check/10-nextkey.t
-SHA1 74f41f738b6473553d0b3c3091389d20bb057db3 t/Tie-Hash-Check/11-scalar.t
-SHA1 860a81b5c8d8408b98faf3bdb683807e3602b67c t/Tie-Hash-Check/12-store.t
+SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
+SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
+SHA1 fd2aa351e22dc455447cf757a3acde9ce8c99e76 t/Tie-Hash-Check/01-use.t
+SHA1 bc24ef92051e42782e9d9523812e16034b447311 t/Tie-Hash-Check/02-version.t
+SHA1 5f76542393300fea3d50a81251c5d522e340e6d1 t/Tie-Hash-Check/03-tiehash.t
+SHA1 9948b5226af995705284ffb868f417aca60373ce t/Tie-Hash-Check/04-clear.t
+SHA1 c5e4c6d3fe4dab4319dce292711e09ec87550dce t/Tie-Hash-Check/05-delete.t
+SHA1 34f3507dba5e6113b39e9fbff7be6c5b0bd82cf0 t/Tie-Hash-Check/06-exists.t
+SHA1 b3cb49e2adc3a1cd35105a48d517a99614f829e9 t/Tie-Hash-Check/07-fetch.t
+SHA1 2e598c14cc8b7ef176b8cafc848e414d5a755915 t/Tie-Hash-Check/08-firstkey.t
+SHA1 386b50e2e96b4a47a62f5640be6abed8817f0567 t/Tie-Hash-Check/09-nextkey.t
+SHA1 74f41f738b6473553d0b3c3091389d20bb057db3 t/Tie-Hash-Check/10-scalar.t
+SHA1 860a81b5c8d8408b98faf3bdb683807e3602b67c t/Tie-Hash-Check/11-store.t
+SHA1 ec2c3c5b052eb0e512ace8ce0900cb130747ed1b xt/Tie-Hash-Check/01-pod_coverage.t
+SHA1 0c4204c6be0e49eef58eb8a8d8aaf59a1ad26618 xt/Tie-Hash-Check/02-pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJUgzezAAoJEAwa+cf4dLBaVkkIAOeSVjEMPK56J/Mf7vsafKLP
-MizJu06ydjjrDsExlIp7pQdzLP0ntaskxTQ+puAcUc7gVQyhRkjmuNi2gos+EfQb
-iSBgAGr8jqZYMp+UboYmvupKUy60Lp1XU8Aw4yuBbKCYEjqDOfBug9nPazA+RVEh
-5/cFajY9sOdxOTEpV5/uALXhUVpZjxRnKu2U6Jb40fpTDaVaTo4dumFGXbm3ydXY
-89LBze0dDlN19Vqj01+SpIkp9PMHw5uS1JCOf+z3r5efgcxdd4eKBGg3pw/HG7A5
-DtS+DyweIcFm02lZhbhPw0AEtyIL3zodNSn+H/wmySOkLBx3uJQIJ5tA9e8B+pw=
-=X30H
+iQEcBAEBAgAGBQJWBUxwAAoJEJe+XXKaIuTlDrQIAL6cDjYeUMkxqJgLdDr9X0g/
+FStf6fCNui/1y/Cwt7tAXfoCn4AFhVdJwgwX34aiff2n5CYBtUSDm3GGiiMxIOn3
+D6VvtSsGMwXW6ElVoCX4XzRsMTDB9wc72DimwSC/moDrakKR1geiROtaLkucH6Nj
+u06WF16+NAv9ho+DjtSsej7YmKGl6lfkcr3xFv0MVkaMlU3nW6CvXG4yDMYsZe9E
+wBzHLtjbrbytbDjsO3ic93JO4o6JmkFGiKMlX9JRZHYYJ5nGopN9O/Vu4D7+fZqZ
+yszpq/HsMioMRI/jxDFIp1m+au5WNvvHfqGetguiSHWnG0IWczPavO+6uk/BPR8=
+=q1Il
 -----END PGP SIGNATURE-----

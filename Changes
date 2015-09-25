@@ -1,4 +1,4 @@
-0.03
+0.03 2015-09-25T15:30:18+02:00
  - Move author tests to xt/ directory.
  - Update Module::Install to 1.16 version.
  - Update copyright years.
