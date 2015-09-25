@@ -1,5 +1,6 @@
 0.03
  - Update Module::Install to 1.16 version.
+ - Update copyright years.
 
 0.02 2014-12-06T18:06:55+01:00
  - Add Error::Pure::Utils to dependencies.
