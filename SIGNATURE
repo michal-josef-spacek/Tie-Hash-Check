@@ -14,13 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 b335f34fe4e4ae4e38f587433478b132e33e4978 Changes
-SHA1 51b5115f4177cb0a8cffac1a7dfa6d06187436f0 Check.pm
+SHA1 dffa0d0efed5ce0c5811414f489575df7c67d1e2 Changes
+SHA1 18e8acd51bf630f42b69a558eb951c351c7e14af Check.pm
 SHA1 b7ceae89cdd78850407f39eeb346505c22908f4b LICENSE
 SHA1 4bd444faa6c59e95843259abc44d90fd6914c74d MANIFEST
-SHA1 a05affe66718cc8f0e812dc1aba07e82d3d250c8 META.yml
-SHA1 834f351dc66814758bebf2c13577b41296f9d4a7 Makefile.PL
-SHA1 462d8af3ff9b39a54a533e4c5c48a643128fee1e README
+SHA1 3a5e0d0138b3ad0269871411a300e64709e1e7a1 META.yml
+SHA1 e61e9ce18fc38df4ee49eb1f186f8e80db0abbba Makefile.PL
+SHA1 9989560ea8c65bc0c7c8a37ebe662037a7a15352 README
 SHA1 6ddb9066bfb01cf07b3cc8b81cb05dfdce88354f examples/ex1.pl
 SHA1 bce3c51bb369419603298064b78e14077b93af66 inc/Module/Install.pm
 SHA1 5c1a9d3a384a5262cbc105ab76d446047904c7fa inc/Module/Install/AuthorRequires.pm
@@ -34,7 +34,7 @@ SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.p
 SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
 SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
 SHA1 fd2aa351e22dc455447cf757a3acde9ce8c99e76 t/Tie-Hash-Check/01-use.t
-SHA1 bc24ef92051e42782e9d9523812e16034b447311 t/Tie-Hash-Check/02-version.t
+SHA1 01bd197748a02868de1ee19ded615bde3cd03857 t/Tie-Hash-Check/02-version.t
 SHA1 5f76542393300fea3d50a81251c5d522e340e6d1 t/Tie-Hash-Check/03-tiehash.t
 SHA1 9948b5226af995705284ffb868f417aca60373ce t/Tie-Hash-Check/04-clear.t
 SHA1 c5e4c6d3fe4dab4319dce292711e09ec87550dce t/Tie-Hash-Check/05-delete.t
@@ -42,18 +42,18 @@ SHA1 34f3507dba5e6113b39e9fbff7be6c5b0bd82cf0 t/Tie-Hash-Check/06-exists.t
 SHA1 b3cb49e2adc3a1cd35105a48d517a99614f829e9 t/Tie-Hash-Check/07-fetch.t
 SHA1 2e598c14cc8b7ef176b8cafc848e414d5a755915 t/Tie-Hash-Check/08-firstkey.t
 SHA1 386b50e2e96b4a47a62f5640be6abed8817f0567 t/Tie-Hash-Check/09-nextkey.t
-SHA1 74f41f738b6473553d0b3c3091389d20bb057db3 t/Tie-Hash-Check/10-scalar.t
+SHA1 3613fff4fe834deaffb5f354b01675b31735290e t/Tie-Hash-Check/10-scalar.t
 SHA1 860a81b5c8d8408b98faf3bdb683807e3602b67c t/Tie-Hash-Check/11-store.t
 SHA1 ec2c3c5b052eb0e512ace8ce0900cb130747ed1b xt/Tie-Hash-Check/01-pod_coverage.t
 SHA1 0c4204c6be0e49eef58eb8a8d8aaf59a1ad26618 xt/Tie-Hash-Check/02-pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWBUxwAAoJEJe+XXKaIuTlDrQIAL6cDjYeUMkxqJgLdDr9X0g/
-FStf6fCNui/1y/Cwt7tAXfoCn4AFhVdJwgwX34aiff2n5CYBtUSDm3GGiiMxIOn3
-D6VvtSsGMwXW6ElVoCX4XzRsMTDB9wc72DimwSC/moDrakKR1geiROtaLkucH6Nj
-u06WF16+NAv9ho+DjtSsej7YmKGl6lfkcr3xFv0MVkaMlU3nW6CvXG4yDMYsZe9E
-wBzHLtjbrbytbDjsO3ic93JO4o6JmkFGiKMlX9JRZHYYJ5nGopN9O/Vu4D7+fZqZ
-yszpq/HsMioMRI/jxDFIp1m+au5WNvvHfqGetguiSHWnG0IWczPavO+6uk/BPR8=
-=q1Il
+iQEcBAEBAgAGBQJXvtYLAAoJEJe+XXKaIuTlrPcIAKTXcrRl1TAwuRmtlNJUwto2
+EhTUAFFn4FrAN0mETTHP7Oa0iLtfLJQBDFMMD65FxJa5ASJOiX7PfMn6t5Lv3Qls
+5fgXPdAkoG8PUYaHeNye6q7vL4yJj00cKzgXru1vnZHyPAytIjWZXDiyH98KRe1V
+xDA6+3ehh2YCUpuruGhiYXyT599UhLa1s0nUhJxSBx08Hk80PBt35ov7/DSWbl4j
+Q24Vfrfe/TlLJalGnWDDPv2EAMwFwEivFtFMyd7KGEH88b53TF3sdj172ZqvWuce
+H9NIaUfSKFdlTa3of2Y6JAtkkvJsRFzkuD6conNANWWs4da4IghCII7zv52lVxo=
+=FuKl
 -----END PGP SIGNATURE-----
