@@ -1,6 +1,6 @@
-0.06
- - Next fix of #117194 :-) - Change in `scalar %hash` was between 5.25.2 and
-   5.25.3 perl versions.
+0.06 2016-08-25T23:23:18+02:00
+ - Next fix of #117194 :-) - Change in `scalar %hash` was between 5.25.2
+   and 5.25.3 perl versions.
 
 0.05 2016-08-25T20:26:48+02:00
  - Fix DEPENDENCIES section in doc.
