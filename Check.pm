@@ -204,7 +204,8 @@ Tie::Hash::Check - Tied construct for hash key checking.
 
 =head1 DEPENDENCIES
 
-L<Error::Pure>.
+L<Error::Pure>,
+L<Error::Pure::Utils>.
 
 =head1 REPOSITORY
 

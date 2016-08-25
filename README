@@ -67,7 +67,7 @@ EXAMPLE
      # Tie::Hash::Check: Key 'three' doesn't exist.
 
 DEPENDENCIES
-    Error::Pure.
+    Error::Pure, Error::Pure::Utils.
 
 REPOSITORY
     <https://github.com/tupinek/Hash-Check>.
