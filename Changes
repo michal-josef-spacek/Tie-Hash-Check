@@ -1,3 +1,5 @@
+0.05
+
 0.04 2016-08-25T13:27:04+02:00
  - Fix #117194 ("scalar(%hash)" return signature changed).
 
