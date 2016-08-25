@@ -1,3 +1,5 @@
+0.06
+
 0.05 2016-08-25T20:26:48+02:00
  - Fix DEPENDENCIES section in doc.
  - Revert last fix of #117194. Fix test on perl gt v5.25.0.
