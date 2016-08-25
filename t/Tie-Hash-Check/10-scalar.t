@@ -14,9 +14,9 @@ tie my %hash, 'Tie::Hash::Check', {
 	'two' => 2,
 };
 my $scalar = scalar %hash;
-if ($PERL_VERSION lt v5.25.0) {
+if ($PERL_VERSION lt v5.25.3) {
 	like($scalar, qr{\d/8}, 'Get scalar value of hash.');
 } else {
-	# On Perl gt v5.25.0 `scalar %hash` returns number of pairs.
+	# On Perl gt v5.25.3 `scalar %hash` returns number of pairs.
 	is($scalar, 2, 'Get scalar value of hash.');
 }
