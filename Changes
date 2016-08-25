@@ -1,4 +1,5 @@
 0.04
+ - Fix #117194 ("scalar(%hash)" return signature changed).
 
 0.03 2015-09-25T15:30:18+02:00
  - Move author tests to xt/ directory.

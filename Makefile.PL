@@ -24,6 +24,7 @@ resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 resources 'homepage' => 'https://github.com/tupinek/Tie-Hash-Check';
 resources 'repository' => 'git://github.com/tupinek/Tie-Hash-Check';
 test_requires 'English' => 0;
+test_requires 'Hash::Util' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;
