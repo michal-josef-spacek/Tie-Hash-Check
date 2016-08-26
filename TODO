@@ -1,9 +1,5 @@
 TODO
 ====
-6. scalar() metoda na urcitych verzich Perlu nefunguje spravne.
-   http://www.cpantesters.org/distro/T/Tie-Hash-Check.html
-   http://matrix.cpantesters.org/?dist=Tie-Hash-Check+0.01
-Tohle by mohlo byt ok, ne?
 7.
 
 Applied
@@ -22,3 +18,9 @@ OK [20141127] skim
 
 5. Pridat komentare k testum.
 OK [20141128] skim
+
+6. scalar() metoda na urcitych verzich Perlu nefunguje spravne.
+   http://www.cpantesters.org/distro/T/Tie-Hash-Check.html
+   http://matrix.cpantesters.org/?dist=Tie-Hash-Check+0.01
+v 5.8.3 zacal fungovat SCALAR na TIEHASH.
+OK [20160826] skim

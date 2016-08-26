@@ -18,7 +18,7 @@ readme_from 'Check.pm';
 recursive_author_tests('xt');
 requires 'Error::Pure' => 0.18;
 requires 'Error::Pure::Utils' => 0.18;
-requires 'perl' => '5.6.0';
+requires 'perl' => '5.8.3';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Tie-Hash-Check';
 resources 'homepage' => 'https://github.com/tupinek/Tie-Hash-Check';
