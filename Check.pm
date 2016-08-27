@@ -9,7 +9,7 @@ use Error::Pure qw(err);
 use Error::Pure::Utils;
 
 # Version.
-our $VERSION = 0.08;
+our $VERSION = 0.09;
 
 # Error level.
 $Error::Pure::Utils::LEVEL = 5;
@@ -224,6 +224,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.08
+0.09
 
 =cut
