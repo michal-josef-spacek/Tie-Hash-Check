@@ -14,11 +14,11 @@ author_requires 'Test::Pod' => 0;
 author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
 name 'Tie-Hash-Check';
+perl_version 5.008003;
 readme_from 'Check.pm';
 recursive_author_tests('xt');
 requires 'Error::Pure' => 0.18;
 requires 'Error::Pure::Utils' => 0.18;
-requires 'perl' => '5.8.3';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Tie-Hash-Check';
 resources 'homepage' => 'https://github.com/tupinek/Tie-Hash-Check';
