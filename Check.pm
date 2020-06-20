@@ -120,6 +120,7 @@ Tie::Hash::Check - Tied construct for hash key checking.
 =head1 SYNOPSIS
 
  use Tie::Hash::Check;
+
  tie my %hash, 'Tie::Hash::Check', {
          %parameters,
  };
