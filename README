@@ -44,11 +44,9 @@ ERRORS
              Key '%s' doesn't exist.
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Tie::Hash::Check;
 
      # Set error type.

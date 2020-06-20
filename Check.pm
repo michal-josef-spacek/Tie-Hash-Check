@@ -1,14 +1,11 @@
 package Tie::Hash::Check;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Error::Pure qw(err);
 use Error::Pure::Utils;
 
-# Version.
 our $VERSION = 0.09;
 
 # Error level.
@@ -180,11 +177,9 @@ Tie::Hash::Check - Tied construct for hash key checking.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Tie::Hash::Check;
 
  # Set error type.
