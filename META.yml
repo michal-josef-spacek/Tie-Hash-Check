@@ -29,7 +29,7 @@ requires:
   perl: 5.8.3
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Tie-Hash-Check
-  homepage: https://github.com/tupinek/Tie-Hash-Check
+  homepage: https://github.com/michal-josef-spacek/Tie-Hash-Check
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/Tie-Hash-Check
+  repository: git://github.com/michal-josef-spacek/Tie-Hash-Check
 version: '0.09'

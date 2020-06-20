@@ -70,7 +70,7 @@ DEPENDENCIES
     Error::Pure, Error::Pure::Utils.
 
 REPOSITORY
-    <https://github.com/tupinek/Hash-Check>.
+    <https://github.com/michal-josef-spacek/Hash-Check>.
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>

@@ -209,7 +209,7 @@ L<Error::Pure::Utils>.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Hash-Check>.
+L<https://github.com/michal-josef-spacek/Hash-Check>.
 
 =head1 AUTHOR
 
